@@ -1,0 +1,7 @@
+from sklearn.naive_bayes import GaussianNB
+
+nb = GaussianNB()
+nb.fit(X_train, y_train)
+
+nb_pred = nb.predict(X_test)
+print("Naive Bayes Accuracy:", accuracy_score(y_test, nb_pred))
